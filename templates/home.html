@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="오데트 디자인 스튜디오. 상세페이지, 패키징, 어쩌고 저쩌고..."> <!-- 검색엔진에 노출될 소개말 -->
+<title> 오데트 | Odette </title> <!-- 검색엔진에 노출될 제목 -->
+
+<!-- 파비콘과 css설정 -->
+<link rel="shortcut icon" href="./images/favicon.png">
+<link href="./odette_files/css/stylesheet.css" media="screen" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./odette_files/css/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./odette_files/css/blog.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./odette_files/css/socialize-bookmarks.css" media="screen">
+
+<script type="text/javascript" async="" src="./odette_files/javascript/ga.js"></script>
+<script type="text/javascript" src="./odette_files/javascript/jquery.1.4.4.js"></script>
+<script type="text/javascript" src="./odette_files/javascript/custom.js"></script>
+<script type="text/javascript" src="./odette_files/javascript/twitter.js"></script>
+
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40680053-1']);
+  _gaq.push(['_setDomainName', '내_도메인_이름.kr']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+<!-- Photostream Javascript -->
+<script type="text/javascript" src="./odette_files/javascript/a.photostream.js"></script>
+
+<!-- PrettyPhoto -->
+<script type="text/javascript" src="./odette_files/javascript/prettyPhoto.js"></script>
+<link rel="stylesheet" href="./odette_files/css/prettyPhoto.css" type="text/css" media="screen">
+
+<!-- Masonry Javascript File -->
+<script type="text/javascript" src="./odette_files/javascript/filter-fade-portfolio.js"></script>
+<link rel="stylesheet" href="./odette_files/css/color-yellow.css" type="text/css"></head>
+
+<body>
+
+<div id="wrapper">
+
+
+<!-- START HEADER -->
+<div id="header-wrapper">
+
+	<div class="header">
+
+		<div id="logo">
+			<a href="http://127.0.0.1:5000/"><img src="./odette_files/images/logo.png" alt=""></a>
+		</div><!--END LOGO-->
+
+		<div id="primary-menu">
+			<!-- 메뉴 링크-->
+			<ul class="menu sf-js-enabled sf-shadow">
+                <li><a href="http://127.0.0.1:5000/" class="current">Home</a></li>
+                <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+				<li><a href="http://127.0.0.1:5000/about">About</a></li>
+			</ul><!--END UL MENU-->
+
+		</div><!--END PRIMARY MENU-->
+
+        <div id="back-top" style="display: none;">
+         	<a href="http://127.0.0.1:5000/#">Back to Top</a>
+        </div><!--END BACK-TOP-->
+
+	</div><!--END HEADER-->
+
+</div><!--END HEADER-WRAPPER-->
+
+<!-- END HEADER -->
+
+
+<!-- START CONTENT WRAPPER -->
+
+<div id="content-wrapper" style="margin-top: 118px;">
+
+<div class="content">
+
+		<div class="filterable">
+			<ul>
+				<li class="active"><a href="http://127.0.0.1:5000/home.html#" data-filter="all"> All</a></li>
+				<li><a href="http://127.0.0.1:5000/home.html#" data-filter="product page">PRODUCT PAGE</a></li>
+				<li><a href="http://127.0.0.1:5000/home.html#" data-filter="landing page">LANDING PAGE</a></li>
+				<li><a href="http://127.0.0.1:5000/home.html#" data-filter="packaging">PACKAGING</a></li>
+				<li><a href="http://127.0.0.1:5000/home.html#" data-filter="banner">BANNER</a></li>
+				<li><a href="http://127.0.0.1:5000/home.html#" data-filter="logo">LOGO</a></li>
+			</ul><!--END UL-->
+		</div><!--END FILTERABLE-->
+
+	<div class="portfolio-grid">
+		<ul id="thumbs">
+
+		<li class="branding packaging">
+                <div class="item">
+						<a href="http://127.0.0.1:5000/portfolio1.html" class="view"><img src="./odette_files/images/portfolio1.png" alt=""></a>
+					<p class="showme">portfolio1<br>
+                    — Beer Packaging</p>
+				</div><!--END ITEM-->
+		   	</li>
+		<li class="packaging">
+                <div class="item">
+                    <a href="http://127.0.0.1:5000/portfolio2.html" class="view"><img src="./odette_files/images/portfolio2.png" alt=""></a>
+					<p class="showme">portfolio2<br>
+                    — Package Design</p>
+				</div><!--END ITEM-->
+		  </li>
+		<li class="product detail">
+                <div class="item">
+					<a href="{{ url_for('portfolio3') }}">...
+					<img src="{{ url_for('static', filename='./images/portfolio3.png') }}" alt=""></a>
+					<p class="showme">portfolio3<br>
+                    — Package Design</p>
+				</div><!--END ITEM-->
+		</li>
+
+
+		</ul><!--END THUMBS-->
+
+	</div><!--END PORTFOLIO-GRID-->
+
+</div><!--END CONTENT-->
+
+</div><!--END CONTENT-WRAPPER-->
+
+<div id="footer-wrapper">
+
+	<div class="footer">
+
+		<div class="one">
+			<p>© 2024 Odette. All rights reserved.</p>
+		</div><!--END ONE-HALF LAST-->
+
+	</div><!--END FOOTER-->
+
+
+
+</div><!--END FOOTER-WRAPPER-->
+
+</div><!--END WRAPPER-->
+
+<script type="text/javascript" src="./odette_files/wcslog.js.다운로드"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "13906fbc645061";
+wcs_do();
+</script>
+
+</body></html>
+
+
+<head>
+    <title>오데트 스튜디오</title>
+</head>
+<body>
+</body>
+</html>
